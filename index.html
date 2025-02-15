@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Sreeharsha R - Professional Resume</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Font Awesome for Icons -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="profile.jpg" alt="Profile Picture" id="profile-pic">
+        <!-- <img src="https://github.com/hr153/Resume/blob/main/profile.jpg" alt="Profile Picture" id="profile-pic" crossorigin="anonymous"> -->
+        <!-- <h1>Dr. Sreeharsha R, PH.D</h1>
+        <p>Email: <a href="mailto:harsharowdoor@gmail.com">harsharowdoor@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/dr-harsha-rowdur-66360764/">Profile</a></p>
+        <p>Google Scholar: <a href="https://scholar.google.com/citations?user=T4XqUFkAAAAJ&hl=en&authuser=3">Profile</a></p>
+        <p>Phone: +91-7036554734</p> -->
+        <h1 class="display-4">Dr. Sreeharsha R, PH.D</h1>
+        <p class="lead">
+            <i class="fas fa-envelope"></i> Email: <a href="mailto:harsharowdoor@gmail.com" class="text-white">harsharowdoor@gmail.com</a>
+        </p>
+        <p class="lead">
+            <i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/dr-harsha-rowdur-66360764/" class="text-white">Profile</a>
+        </p>
+        <p class="lead">
+            <i class="fas fa-graduation-cap"></i> Google Scholar: <a href="https://scholar.google.com/citations?user=T4XqUFkAAAAJ&hl=en&authuser=3" class="text-white">Profile</a>
+        </p>
+        <p class="lead">
+            <i class="fas fa-phone"></i> Phone: +91-7036554734
+        </p>
+        <button id="download-btn" title="Download PDF">Download Profile</button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">Work Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#training">Training</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#publications">Publications</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <button class="expand-btn">▼</button>
+            <h2>About Me</h2>
+            <div class="content">
+                <p>I have a P.H.D from Mechatronics background (Mechanical), well versed with MATLAB, (Simulink, Scripting, Stateflow, TargetLink), MSC ADAMS/View, ADAMS/Car, SOLIDWORKS, and Virtual Test Drive (VTD) softwares. Having 6 years of research expertise and 2.5 years of Industry experience in Model based design (MBD), Modelling, simulation, and validation with Experimental test-rigs, Control system design and analysis, Multi-body dynamic simulation using MSC ADAMS, Hardware Integration and testing (dSPACE /Raspberry pi) in MATLAB. Interested to explore in the field of Automotive (ADAS) technologies.</p>
+            </div>
+        </section>
+        <section id="experience">
+            <button class="expand-btn">▼</button>
+            <h2>Work Experience</h2>
+            <div class="content">
+                <h3>Onward Technologies - Pune (Feb 16, 2023 – Current)</h3>
+                <p>Senior Engineer deployed at client location Hexagon Pvt Ltd. (Pune Location) in the role of Quality Assurance and Testing Engineer for Virtual Test Drive (VTD) Software development.</p>
+                <ul>
+                    <li>Develop test plans, create detailed test cases, and execute them to verify software functionality</li>
+                    <li>Develop and maintain automated test scripts for consistent and efficient testing using frameworks like Playwright and Robot</li>
+                    <li>Ensure the accuracy and realism of virtual test drive simulations, replicating real-world driving scenarios</li>
+                    <li>Validate mathematical models used for vehicle dynamics, sensor inputs, and environmental factors</li>
+                    <li>Co-simulation of MSC ADAMS with VTD software for obtaining accurate vehicle dynamics</li>
+                    <li>Implement Hardware-in-the-Loop (HIL) testing to validate the software's performance with actual hardware components</li>
+                </ul>
+                <h3>Renaissance Technology - Bengaluru (July 5, 2022 - Feb 14, 2023)</h3>
+                <p>Senior Mechatronics Engineer deployed at client location CAIR – DRDO Bengaluru.</p>
+                <ul>
+                    <li>Understanding the working and control of BLDC motor using Embedded C Programming</li>
+                    <li>Development of simulation model in MATLAB for Speed control of BLDC motor and validation with experimental results.</li>
+                    <li>Development of Multi-body Dynamic model of humanoid robot in MSC ADAMS environment</li>
+                </ul>
+                <h3>IIT(ISM) - DHANBAD (Aug 1, 2016 – June 30, 2022)</h3>
+                <p>Research Fellow on Individual Project</p>
+                <ul>
+                    <li>Development of simulation model in MATLAB Simulink/Simscape or MSC ADAMS tools.</li>
+                    <li>Proper understanding of hardware and Experimental data collection using (Arduino / Raspberry / dSpace/ Hydac) Data acquisition systems.</li>
+                    <li>Develop and implement production ready code using MATLAB (Auto Code generation tool) using Target link and writing Matlab scripts required for the analysis</li>
+                    <li>Involvement in Developing, Implementing & Validating components by comparing simulation results with obtained experimental results.</li>
+                    <li>Worked on control technologies like PID, MPC and cascaded PID to control the position of the hydraulic steering cylinder</li>
+                    <li>Experience in Real-time simulation and control of steering cylinder-using MATLAB.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="skills">
+            <button class="expand-btn">▼</button>
+            <h2>Skills</h2>
+            <div class="content">
+                <div class="skills-grid">
+                    <ul>
+                        <li>MATLAB <span class="stars">★★★★★</span></li>
+                        <li>PYTHON <span class="stars">★★★★☆</span></li>
+                        <li>MSC ADAMS <span class="stars">★★★★☆</span></li>
+                        <li>C/C++ <span class="stars">★★★☆☆</span></li>
+                        <li>Virtual Test Drive <span class="stars">★★★★☆</span></li>
+                    </ul>
+                    <ul>
+                        <li>Git/GitHub <span class="stars">★★★☆☆</span></li>
+                        <li>MSEXCEL <span class="stars">★★★☆☆</span></li>
+                        <li>Automation Studio <span class="stars">★★★☆☆</span></li>
+                        <li>JAVASCRIPT <span class="stars">★★★☆☆</span></li>
+                        <li>SOLIDWORKS <span class="stars">★★★★☆</span></li>
+                        <li>HTML/CSS <span class="stars">★★★★☆</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <button class="expand-btn">▼</button>
+            <h2>Projects</h2>
+            <div class="content">
+                <h3>Ph.D. Project</h3>
+                <p>Design Arrangement and Position Control of the Steering Cylinder of a Load Haul Dump (LHD) Machine.</p>
+                <ul>
+                    <li>Working area: Fluid Power and Control, Mobile Hydraulics, Mechatronics, IOT, Vehicle Dynamics, Multi-body Dynamics, Automation and Control Engineering.</li>
+                    <li>Software Tools used: MATLAB, MSC ADAMS, SOLIDWORKS, dSPACE, AUTOMATION STUDIO.</li>
+                    <li>Hardware used: Hydraulic setup, Stepper Motor, Arduino, Raspberry Pi 4.0, dSPACE controller board, HYDAC data acquisition box, Pressure, Position, LIDAR, and Flow sensors.</li>
+                </ul>
+                <h3>M.Tech Project</h3>
+                <p>Improving Energy Efficiency by Analysis of Potential Energy Regeneration in Hydraulic System of Heavy-Duty Vehicles using Hydro Pneumatic Type Bladder Accumulator.</p>
+                <ul>
+                    <li>Working area: Fluid Power Control and Mobile Hydraulics.</li>
+                    <li>Software Tools: MATLAB, Automation studio, MS excel, Origin 9.0.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="certifications">
+            <button class="expand-btn">▼</button>
+            <h2>Certifications</h2>
+            <div class="content">
+                <ul>
+                    <li>Completed Advance Python Program course organized by Four Step Solutions in 2022.</li>
+                    <li>Completed NPTEL online certification course on “Industrial Automation and Control” (Jan-Apr 2019, 12 week course).</li>
+                </ul>
+            </div>
+        </section>
+        <section id="achievements">
+            <button class="expand-btn">▼</button>
+            <h2>Achievements</h2>
+            <div class="content">
+                <ul>
+                    <li>Participated in KPIT Shodh Awards based on the work carried out in Ph.D. in 2022.</li>
+                    <li>Presented paper in International seminar on INACOMM 2019, IIT MANDI</li>
+                    <li>Presented paper in International seminar on FLAMES 2019, AMITY UNIVERSITY.</li>
+                    <li>Qualified the GATE exam in the years 2014, 2016 and 2017. (Highest marks obtained 60/100 in GATE 2016).</li>
+                </ul>
+            </div>
+        </section>
+        <section id="training">
+            <button class="expand-btn">▼</button>
+            <h2>Industrial Training’s attended</h2>
+            <div class="content">
+                <ul>
+                    <li>Five-day course on Mechatronics and Electro-hydraulic system, Jadavpur University, Kolkata, 2018.</li>
+                    <li>One-week training on Basics of Hydraulic System conducted by YUKEN INDIA pvt.ltd. Bangalore 2017.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="education">
+            <button class="expand-btn">▼</button>
+            <h2>Educational Qualifications</h2>
+            <div class="content">
+                <table>
+                    <tr>
+                        <th>Qualification</th>
+                        <th>University/Board</th>
+                        <th>Year</th>
+                        <th>Percentage/CGPA</th>
+                    </tr>
+                    <tr>
+                        <td>Ph.D. (SPL: Mechatronics) (Mechanical Engineering)</td>
+                        <td>IIT(ISM), Dhanbad</td>
+                        <td>2016-2022</td>
+                        <td>Awarded</td>
+                    </tr>
+                    <tr>
+                        <td>M.TECH (Mechanical Engineering)</td>
+                        <td>IIT(ISM), Dhanbad</td>
+                        <td>2014-16</td>
+                        <td>86.5 (9.11)</td>
+                    </tr>
+                    <tr>
+                        <td>B.TECH (Mechanical Engineering)</td>
+                        <td>LPU, Punjab</td>
+                        <td>2010-14</td>
+                        <td>72.72 (8.08)</td>
+                    </tr>
+                    <tr>
+                        <td>12TH Standard</td>
+                        <td>Andhra Pradesh State Board</td>
+                        <td>2009</td>
+                        <td>91.5</td>
+                    </tr>
+                    <tr>
+                        <td>10TH Standard</td>
+                        <td>Andhra Pradesh State Board</td>
+                        <td>2007</td>
+                        <td>86.5</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="publications">
+            <button class="expand-btn">▼</button>
+            <h2>List of Research Publications</h2>
+            <div class="content">
+                <h3>International SCI/E Journals</h3>
+                <ul>
+                    <li><a href="https://doi.org/10.1177/0959651819847813">A Critical Review on Automation of Load Haul Dumper - An Off-road Driving Vehicle</a></li>
+                    <li><a href="https://doi.org/10.1007/s40430-024-04946-3">Automatic Control and Stability Analysis of a Novel Stepper Motor-Driven Orbitrol Valve Operated Articulated Steering Mechanism</a></li>
+                    <li>Steady-state parametric investigation of Stepper Motor-Driven Orbitrol Valve Operated Articulated Steering Mechanism (Submitted for Review)</li>
+                </ul>
+                <h3>International Conference</h3>
+                <ul>
+                    <li><a href="https://doi.org/10.1016/j.matpr.2022.04.471">Modeling and analysis of articulated steering mechanism</a></li>
+                    <li>Determination of Steering Actuator Mounting Points of a Load Haul Dump Machine for Optimum Performance. In Machines, Mechanism and Robotics (pp. 711-723). Springer, Singapore.</li>
+                    <li>Fuzzy-PID Control of Hydro-motor Speed Used in Heavy Earth Moving Machinery. In Recent Advances in Mechanical Engineering, pp. 83-94. Springer, Singapore, 2021.</li>
+                    <li>Energy saving Analysis Using Pilot Operated Counter Balance Valve In Advances in Engineering Design, pp.279-287. Springer, Singapore, 2019.</li>
+                    <li>Electrical Energy Regeneration of Hydraulic-Split Power Transmission System Using Fuel Efficient Controller, 11th International Fluid Power Conference, Aachen, Germany, 2018.</li>
+                </ul>
+                <h3>National Conference</h3>
+                <ul>
+                    <li>Mathematical modelling of a hydro-pneumatic type gas accumulator, Journal of Mines, Metal and Fuels, pp; 155-158, 2015. (Special issue on MENTCA National Conference 2015).</li>
+                    <li>Operational characteristics of a fixed displacement hydraulic pump, Journal of Mines, Metal and Fuels, pp; 155-158, 2015. (Special issue on MENTCA National Conference 2015).</li>
+                </ul>
+            </div>
+        </section>
+        <!-- Add other sections (Projects, Certifications, Achievements, Training, Education, Publications) similarly -->
+    </main>
+    <footer>
+        <p>© 2025 Sreeharsha Rowduru. All rights reserved.</p>
+        <button id="back-to-top">Back to Top</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
